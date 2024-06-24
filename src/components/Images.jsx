@@ -8,15 +8,15 @@ const cards = [
     alt: 'Books',
     authorImage: 'https://images.unsplash.com/profile-1656733325746-40f80857c806image?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Nick Fewings',
-    likes: '209',
+    likes: 209,
     views: '90.9k',
   },
   {
     image: 'https://plus.unsplash.com/premium_photo-1663835910976-cc2a4b8a96f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Drawing',
     authorImage: 'https://images.unsplash.com/profile-1648828806223-1852f704c58aimage?bg=fff&crop=faces&dpr=1&h=16&w=16&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    authorName: ' Jane Brown',
-    likes: '897',
+    authorName: 'Jane Brown',
+    likes: 897,
     views: '42.9k',
   },
   {
@@ -24,7 +24,7 @@ const cards = [
     alt: 'Violin',
     authorImage: 'https://images.unsplash.com/profile-1700605284178-24ef711a3fcaimage?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Heflon Ton',
-    likes: '307',
+    likes: 307,
     views: '35.8k',
   },
   {
@@ -32,7 +32,7 @@ const cards = [
     alt: 'Minion',
     authorImage: 'https://images.unsplash.com/profile-1587557506333-b29d27a9e277image?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Alison Wang',
-    likes: '448',
+    likes: 448,
     views: '90k',
   },
   {
@@ -40,7 +40,7 @@ const cards = [
     alt: 'Trees and Woods',
     authorImage: 'https://images.unsplash.com/profile-1493320375113-8d776e646fd0?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Johannes Plenio',
-    likes: '908',
+    likes: 908,
     views: '89k',
   },
   {
@@ -48,7 +48,7 @@ const cards = [
     alt: 'Peace',
     authorImage: 'https://images.unsplash.com/profile-1549626490357-32da1bcb28ff?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Colton Sturgeon',
-    likes: '144',
+    likes: 144,
     views: '32k',
   },
   {
@@ -56,7 +56,7 @@ const cards = [
     alt: 'Calligraphy',
     authorImage: 'https://images.unsplash.com/profile-1670718713383-8618729ad715?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Judith Browne',
-    likes: '567',
+    likes: 567,
     views: '7.7k',
   },
   {
@@ -64,26 +64,33 @@ const cards = [
     alt: 'Laptops',
     authorImage: 'https://images.unsplash.com/profile-1554128916364-8b63bfef2e91?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Alejandro Escamilla',
-    likes: '356',
+    likes: 356,
     views: '8k',
   },
   {
     image: 'https://images.unsplash.com/photo-1570626742839-59acd9822944?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'phones',
+    alt: 'Phones',
     authorImage: 'https://images.unsplash.com/profile-1570459350594-2544a8d74fc5image?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
     authorName: 'Luke Lung',
-    likes: '817',
+    likes: 817,
     views: '34.5k',
   },
   {
     image: 'https://images.unsplash.com/photo-1527903789995-dc8ad2ad6de0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJhZ3JhbmNlfGVufDB8fDB8fHww',
     alt: 'Fragrance',
     authorImage: 'https://images.unsplash.com/profile-1686162881418-8cd60dbb266aimage?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    authorName: ' Paul Auston',
-    likes: '789',
+    authorName: 'Paul Auston',
+    likes: 789,
     views: '2.3k',
   },
   {
+    image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Paints',
+    authorImage: 'https://images.unsplash.com/profile-1575693732694-cc2003e2fbc4image?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
+    authorName: 'Steve Johnson',
+    likes: 765,
+    views: '5.4k',
+  }, {
     image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWV8ZW58MHx8MHx8fDA%3D',
     alt: 'Anime',
     authorImage: 'https://images.unsplash.com/profile-1705480099173-b6e90435c526image?bg=fff&crop=faces&dpr=1&h=32&w=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
@@ -164,13 +171,21 @@ const cards = [
   },
 ];
 
+
 function App() {
   return (
     <div className="app">
       {cards.map((card, index) => (
         <div className="card" key={index}>
           <div className="image">
-          <ImagePopup src={card.image} alt={card.alt} />              
+            <ImagePopup 
+              src={card.image} 
+              alt={card.alt} 
+              likes={card.likes} 
+              views={card.views} 
+              authorName={card.authorName} 
+              authorImage={card.authorImage}
+            />
           </div>
           <div className="info">
             <div className="author">

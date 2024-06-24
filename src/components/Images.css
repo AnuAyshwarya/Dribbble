@@ -1,61 +1,48 @@
- .app {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .card {
-  width: 300px;
-  border: transparent;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.image {
   width: 100%;
-  height: 200px;
-  overflow: hidden;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 0px;
-  cursor: grab;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image img {
+.card .image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 200px; /* Increase the height */
+  overflow: hidden;
 }
 
-.info {
-  padding: 10px;
+.card .image img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio */
+  display: block;
 }
 
-.author {
+.card .info {
+  padding: 8px;
+}
+
+.card .author {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 8px;
 }
 
-.author img {
-  width: 30px;
-  height: 30px;
+.card .author img {
   border-radius: 50%;
-  margin-right: 10px;
+  width: 32px;
+  height: 32px;
 }
 
-.author span {
-  font-weight: bold;
-}
-
-.stats {
+.card .stats {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-  color: #666;
-}
-
-.stats span {
-  margin-right: 20px;
+  margin-top: 8px;
 }

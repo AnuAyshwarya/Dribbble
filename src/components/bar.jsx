@@ -21,22 +21,14 @@ const Dropdown = () => {
   };
 
   const handleOptionClick = (option) => {
-    if (option === selected) {
-      setIsOpen(!isOpen); // Toggle dropdown visibility
-    } else {
-      setSelected(option);
-      setIsOpen(true); // Always open dropdown when a different option is selected
-    }
-  };
-
-  const closeDropdown = () => {
+    setSelected(option);
     setIsOpen(false);
   };
 
   return (
     <div className="dropdown">
       <button className="dropdown-toggle" onClick={toggleDropdown}>
-        {selected} <span className="arrow">{isOpen ? <FontAwesomeIcon icon={faCaretUp} onClick={closeDropdown} /> : <FontAwesomeIcon icon={faCaretDown} />}</span>
+        {selected} <span className="arrow">{isOpen ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />}</span>
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
@@ -60,6 +52,12 @@ const Bar = () => {
   const [color, setColor] = useState(''); // State for the color input
   const [showFilters, setShowFilters] = useState(false); // State to show/hide filters
   const [filteredContent, setFilteredContent] = useState([]); // State for filtered content
+  const [filterOption, setFilterOption] = useState('Following'); // State for the filter dropdown
+
+  const handleFilterChange = (option) => {
+    setFilterOption(option);
+    // Implement filtering logic based on the selected filter option if needed
+  };
 
   // Filter content based on tags and color using the data array
   const filterContent = (tags, color) => {
@@ -89,7 +87,7 @@ const Bar = () => {
   return (
     <div className="bar-container">
       <div className="bar-left">
-        <Dropdown />
+        <Dropdown filterOption={filterOption} handleFilterChange={handleFilterChange} />
         <div className="bar-buttons">
           <button className="bar-button">
             <FontAwesomeIcon icon={faAngleLeft} className="bar-button-icon" />
