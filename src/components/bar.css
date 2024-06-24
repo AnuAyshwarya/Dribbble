@@ -1,0 +1,137 @@
+/* Basic styling for the bar container */
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 20px;
+}
+
+/* Styling for the left section */
+.bar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for buttons in the left section */
+.bar-button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bar-button:hover {
+  color: #007bff;
+}
+
+/* Styling for the dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  min-width: 160px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #f0f0f0; /* Highlight the selected option */
+}
+
+/* Arrow styling */
+.arrow {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Styling for the right section */
+.bar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the filter section */
+.filter-section {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Styling for the filter inputs */
+.filter-input {
+  margin-right: 20px;
+}
+
+.filter-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-input input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  width: 150px; /* Adjust the width as needed */
+}
+
+/* Styling for the visible filter section */
+.visible-filter-section {
+  display: flex;
+  align-items: center;
+}
+
+.visible-filter-section .filter-input {
+  margin-right: 10px;
+}
